@@ -22,7 +22,7 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://i.ibb.co/rkTg7
          hydratedTemplate: {
            imageMessage: message.imageMessage,
            hydratedContentText: bot ini menggunakan script,
-           hydratedFooterText: Yuki Bot-Md,
+           hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
                displayText: '𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿',
