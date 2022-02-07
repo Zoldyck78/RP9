@@ -37,7 +37,7 @@ zekskey = 'apivinz'
 xteamkey = 'KingOfBear'
 leyskey = 'dappakntlll'
 bearkey = 'KingOfBear'
-ApiiKey = '#sc'
+ApiiKey = 'https://youtu.be/Sgb5BVOW66Y'
 vinkey = 'vinko'
 
 namabot = 'Yuki Bot'
