@@ -190,7 +190,7 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
                {
              quickReplyButton: {
                displayText: '𝙶𝙴𝚃 𝙱𝙾𝚃',
-               id: '#donasi',
+               id: '.donasi',
              }
 
            },
