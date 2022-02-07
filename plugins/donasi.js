@@ -17,7 +17,7 @@ let tqto = `
          hydratedTemplate: {
            hydratedContentText: tqto,
            locationMessage: { 
-           jpegThumbnail: `https://i.ibb.co/rkTg7B0/donasi.jpg` }, 
+           jpegThumbnail: await (await fetch(`https://i.ibb.co/rkTg7B0/donasi.jpg`)).buffer() }, 
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
