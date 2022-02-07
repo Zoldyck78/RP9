@@ -7,7 +7,9 @@
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys-md')
 let fs = require('fs')
 let moment = require('moment-timezone')
+let fetch = require('node-fetch')
 let handler = async (m) => {
+    bear = "THANKS ALL"
     let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
@@ -32,7 +34,7 @@ https://github.com/Ilhamskhzyi
          hydratedTemplate: {
            hydratedContentText: tqto,
            locationMessage: { 
-           jpegThumbnail: await (await fetch(fla + command)).buffer() }, 
+           jpegThumbnail: await (await fetch(fla + bear)).buffer() }, 
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
