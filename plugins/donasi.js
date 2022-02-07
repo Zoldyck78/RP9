@@ -1,45 +1,36 @@
-/**
- * TOLONG JANGAN GANTI GAMBARNYA,NOMORKU DAN SAWERIAKU
- * MENDING KALIAN TAMBAHIN NOMOR KALIAN
-*/
-
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys-md')
+let fs = require('fs')
+let moment = require('moment-timezone')
 let handler = async (m) => {
-let duit = `𝘿𝙊𝙉𝘼𝙎𝙄 𝙑𝙄𝘼 •
-
-➥ 𝙂𝙊𝙋𝘼𝙔
-➥ 𝙊𝙑𝙊
-➥ 𝘿𝘼𝙉𝘼
-➥ 𝙋𝘼𝙔𝙋𝘼𝙇
-➥ 𝘽𝘼𝙉𝙆
-➥ 𝙋𝙃𝙊𝙉𝙀𝙉𝙐𝙈𝘽𝙀𝙍
-❍ 𝙉𝙀𝙓𝙏 → 𝙆𝙇𝙄𝙆 𝘽𝙐𝙏𝙏𝙊𝙉 
-
-_*silahkan pc owner untuk mengakses*_`
-let message = await prepareWAMessageMedia({ image: {url: 'https://i.ibb.co/rkTg7B0/donasi.jpg' }}, { upload: conn.waUploadToServer })
+    let who
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
+    else who = m.sender
+    let user = global.db.data.users[who]
+let tqto = `
+┌〔 𝘿𝙤𝙣𝙖𝙨𝙞 • 𝙀𝙢𝙤𝙣𝙚𝙮 
+├ _DANA_ : *0882-7926-8363*
+├ _SAWERIA_ : *https://saweria.co/raraharsita2*
+├ *SELAIN DANA VIA QR AJA ATAU SAWERIA*
+└────`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
-           imageMessage: message.imageMessage,
-           hydratedContentText: bot ini menggunakan script,
+           hydratedContentText: tqto,
+           locationMessage: { 
+           jpegThumbnail: `https://i.ibb.co/rkTg7B0/donasi.jpg` }, 
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿',
-               url: 'https:/wa.me/6288279268363'
+               displayText: '𝙶𝙴𝚃 𝙱𝙾𝚃',
+               url: 'https://youtu.be/Sgb5BVOW66Y'
              }
 
            },
-               {
-             callButton: {
-               displayText: '𝚙𝚑𝚘𝚗𝚎 𝚗𝚞𝚖𝚋𝚎𝚛',
-               phoneNumber: '+6288279268363'
-             }
-           },           
+       
                {
              quickReplyButton: {
-               displayText: 'owner',
-               id: '.owner',
+               displayText: '𝙱𝙰𝙲𝙺 𝚃𝙾 𝙼𝙴𝙽𝚄',
+               id: '.menu',
              }
 
            }]
@@ -56,6 +47,6 @@ let message = await prepareWAMessageMedia({ image: {url: 'https://i.ibb.co/rkTg7
 
 handler.help = ['donasi']
 handler.tags = ['info']
-handler.command = /^dona(te|si)|bagiduit$/i
+handler.command = /^dona(te|si)$/i
 
 module.exports = handler
