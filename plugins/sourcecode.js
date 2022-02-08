@@ -7,6 +7,7 @@ const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessa
 let fetch = require('node-fetch')
 let fs = require('fs')
 let handler = async (m, { command }) => {
+bear = "Source Code"
 ye = `@${m.sender.split`@`[0]}`
 let esce = `
 Hai Sayangku ${ye} Lagi Nyari Sc Botkuh Yah:v
@@ -21,7 +22,7 @@ _*Gak Subscribe Gak Work Njingg...!!!*_`
          hydratedTemplate: {
            hydratedContentText: esce,
            locationMessage: { 
-           jpegThumbnail: await (await fetch(fla + command)).buffer() },           
+           jpegThumbnail: await (await fetch(fla + bear)).buffer() },           
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
