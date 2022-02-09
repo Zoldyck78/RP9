@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://telegra.ph/file/b135d015c85c836ba0add.jpg" alt="YUKI BOT" width="500"/>
+<img src="https://i.ibb.co/KsMxC5P/thumb.jpg" alt="YUKI BOT" width="500"/>
 
 
 </p>
