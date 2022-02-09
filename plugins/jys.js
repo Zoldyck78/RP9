@@ -13,7 +13,7 @@ let esce = `
 Hai Sayangku ${ye} Lagi Nyari Sc Botkuh Yah:v
 
 Nih Link Sc Gua Dibawah :
-https://youtu.be/Sgb5BVOW66Y
+https://pastelink.net/v19Md
 
 _*Jangan Lupa Di Like Dan Subscribe Tod...!!!*_
 _*Gak Subscribe Gak Work Njingg...!!!*_`
