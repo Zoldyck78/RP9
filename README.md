@@ -1,33 +1,33 @@
 <p align="center">
-<img src="https://telegra.ph/file/b135d015c85c836ba0add.jpg" alt="CATZY BOT" width="500"/>
+<img src="https://telegra.ph/file/b135d015c85c836ba0add.jpg" alt="YUKI BOT" width="500"/>
 
 
 </p>
 <p align="center">
-<a href="#"><img title="CATZY BOT MULTI DEVICE" src="https://img.shields.io/badge/CATZY BOT MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="YUKI BOT MULTI DEVICE" src="https://img.shields.io/badge/YUKI BOT MULTI DEVICE-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/Ilhamskhzyi/botv1-Md"><img title="Author" src="https://img.shields.io/badge/Author-Ilham-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/saipulanuar/v19-Md"><img title="Author" src="https://img.shields.io/badge/Author-KINGOFBEAR-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://github.com/"><img title="Followers" src="https://img.shields.io/github/followers/Iihamhskhyzi?color=blue&style=flat-square"></a>
-<a href="https://github.com/"><img title="Stars" src="https://img.shields.io/github/stars/Ilhamskhzyi/botv1-Md?color=red&style=flat-square"></a>
-<a href="https://github.com//network/members"><img title="Forks" src="https://img.shields.io/github/forks/Ilhamskhzyi/botv1-Md?color=red&style=flat-square"></a>
+<a href="https://github.com/"><img title="Followers" src="https://img.shields.io/github/followers/saipulanuar?color=blue&style=flat-square"></a>
+<a href="https://github.com/"><img title="Stars" src="https://img.shields.io/github/stars/saipulanuar/v19-Md?color=red&style=flat-square"></a>
+<a href="https://github.com//network/members"><img title="Forks" src="https://img.shields.io/github/forks/saipulanuar/v19-Md?color=red&style=flat-square"></a>
 </P>
 <p align="center">
-  <a href="https://github.com/ilhamskhyzi/catzy-Md#requirements">Requirements</a> •
-  <a href="https://github.com/ilhamskhyzi/catzy-Md#instalasi">Installation</a> •
-  <a href="https://github.com/ilhamskhyzi/catzy-Md#thanks-to">Thanks to</a> •
-  <a href="https://github.com/ilhamskhyzi/catzy-Md#Official-Group"> Official Group Bot</a> •
-  <a href="https://github.com/ilhamskhyzi/catzy-Md#donate">Donate</a>
+  <a href="https://github.com/saipulanuar/v19-Md#requirements">Requirements</a> •
+  <a href="https://github.com/saipulanuar/v19-Md#instalasi">Installation</a> •
+  <a href="https://github.com/saipulanuar/v19-Md#thanks-to">Thanks to</a> •
+  <a href="https://github.com/saipulanuar/v19-Md#Official-Group"> Official Group Bot</a> •
+  <a href="https://github.com/saipulanuar/v19-Md#donate">Donate</a>
 </p>
 </div>
 ---
 
-# CATZY BOT Whatsapp MD
+# YUKI BOT Whatsapp MD
 ## For Users Termux Install Module [here](https://github.com/Ilhamskhyzi/node_modules)
 ## Information
-> CATZY BOT whatsapp using a Baileys library.
+> YUKI BOT whatsapp using a Baileys library.
 > Jika kamu menemukan semacam bug, harap untuk dimaklumi sementara
 >
 > • NOTE: Pastikan Jaringan kalian lancar dan device kalian bagus:v, 
@@ -36,14 +36,13 @@
 
 <h3 align="center">Made by :</h3>
 <p align="center">
-  <a href="https://github.com/Ilhamskhyi"><img src="https://github.com/Ilhamskhyi.png?size=128" height="128" width="128" /></a>
+  <a href="https://github.com/saipulanuar"><img src="https://github.com/saipulanuar.png?size=128" height="128" width="128" /></a>
   <a href="https://github.com/nurutomo"><img src="https://github.com/nurutomo.png?size=128" height="128" width="128" /></a>
 </p>
 
 ## Tester Bot
 * Jika kamu menemukan bug jangan lupa buka Issues
-* Info Lebih Lanjut, Chat [owner-Shiraori](https://wa.me/687710621)
-* Kamu bisa testing fitur catzy-bot md [disini](https://wa.me/6283838908687?text=.menu)
+* Info Lebih Lanjut, Chat [Owner-YukiBot](https://wa.me/6288279268363)
 
 ## How To Change Menu Display
 ----
@@ -113,8 +112,8 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/shir
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/Ilhamskhyi/botv1-Md
-cd botv1-Md
+git clone https://github.com/saipulanuar/v19-Md
+cd v19-Md
 npm install
 npm update
 npm index
@@ -130,8 +129,8 @@ pkg install nodejs
 pkg install ffmpeg
 pkg install imagemagick
 pkg install yarn
-git clone https://github.com/Ilhamskzyi/botv1-Md
-cd botv1-Md
+git clone https://github.com/saipulanuar/v19-Md
+cd v19-Md
 yarn
 node .
 ```
@@ -159,8 +158,8 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 ```
 
 # Thanks to
- [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![Ilman](https://github.com/ilmanhdyt.png?size=150)](https://github.com/ilmanhdyt) | [![Istikmal](https://github.com/BochilGaming.png?size=150)](https://github.com/BochilGaming)
+ [![Nurutomo](https://github.com/Nurutomo.png?size=150)](https://github.com/Nurutomo) | [![KingOfBear](https://github.com/saipulanuar.png?size=150)](https://github.com/saipulanuar) | [![Istikmal](https://github.com/BochilGaming.png?size=150)](https://github.com/BochilGaming)
 ----|----|----
-[Nurutomo](https://github.com/Nurutomo) | [Ilman](https://github.com/ilmanhdyt) | [Istikmal](https://github.com/BochilGaming)
+[Nurutomo](https://github.com/Nurutomo) | [KingOfBear](https://github.com/saipulanuar) | [Istikmal](https://github.com/BochilGaming)
  Author | yg nambah fitur | yg punya sc
 
