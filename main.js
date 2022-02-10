@@ -21,8 +21,6 @@ try {
 }
 const { Low, JSONFile } = low
 
-require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
-
 const mongoDB = require('./lib/mongoDB')
 
 
