@@ -495,9 +495,10 @@ module.exports = {
                             pp = await this.getProfilePicture(user)
                         } catch (e) {
                         } finally {
+                            let res = `https://some-random-api.ml/welcome/img/7/stars?key=4SKDlB5Eg9dhouWKOdXCEeDiYWJ8hQolHQDnZnUvPPdRM6tskQ2xWHk73wkim7uZ&username=${user.split('@')[0]}&discriminator=0001&avatar=${pp}%3Fsize=512&type=join&guildName=${this.getName(id))}&textcolor=white&memberCount=100`
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', this.getName(id)).replace('@desc', groupMetadata.desc.toString()) :
                                 (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0]).replace('@subject', this.getName(id))
-                            this.sendFile(id, pp, 'pp.jpg', text, null, false, {
+                            this.sendFile(id, res, 'pp.jpg', text, null, false, {
                                 contextInfo: {
                                     mentionedJid: [user]
                                 }
