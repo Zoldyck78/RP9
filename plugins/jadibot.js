@@ -1,5 +1,5 @@
 let { MessageType } = require('@adiwajshing/baileys-md')
-let {qrcode} = require('qrcode')
+let qrcode = require('qrcode')
 
 if (global.conns instanceof Array) console.log()// for (let i of global.conns) global.conns[i] && global.conns[i].user ? global.conns[i].close().then(() => delete global.conns[id] && global.conns.splice(i, 1)).catch(global.conn.logger.error) : delete global.conns[i] && global.conns.splice(i, 1)
 else global.conns = []
@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       await conn.loadAuthInfo(obj)
       auth = true
     }
-    conn.on('qr', async qr => {
+    conn.on function('qr', async qr => {
       let scan = await parent.sendFile(m.chat, await qrcode.toDataURL(qr, { scale: 8 }), 'qrcode.png', 'Scan QR ini untuk jadi bot sementara\n\n1. Klik titik tiga di pojok kanan atas\n2. Ketuk Perangkat Tertaut\n3. Scan QR ini \nQR Expired dalam 20 detik', m)
       setTimeout(() => {
         parent.deleteMessage(m.chat, scan.key)
