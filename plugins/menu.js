@@ -199,12 +199,6 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
                displayText: 'YukiBot 𝚝𝚎𝚊𝚖',
                id: '.tqto',
              }
-           },
-               {
-             quickReplyButton: {
-               displayText: 'YukiBot 𝚝𝚎𝚊𝚖',
-               id: '.tqto',
-             }
            }]
          }
        }
