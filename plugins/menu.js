@@ -196,10 +196,9 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
            },
                {
              quickReplyButton: {
-               displayText: 'YukiBot Group',
-               id: 'https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL',
+               displayText: 'YukiBot 𝚝𝚎𝚊𝚖',
+               id: '.tqto',
              }
-
            },
                {
              quickReplyButton: {
