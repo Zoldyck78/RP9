@@ -113,7 +113,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
            hydratedButtons: [{
              urlButton: {
                displayText: 'Link Script',
-               url: 'https://xnxx.com',
+               url: 'https://bit.ly/3HUakDk',
              }
 
            },
