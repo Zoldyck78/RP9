@@ -1,5 +1,6 @@
 let moment = require('moment-timezone')
 let fs = require('fs')
+let fetch = require('node-fetch')
 let handler = async (m, { conn, command }) => {
 let img1 = fs.readFileSync('./src/img1.png')
 let img2 = fs.readFileSync('./src/img2.png')
