@@ -43,8 +43,8 @@ runtime = process.uptime()
                         }
                       }
 					//m.reply(teks)
-					
-conn.sendMessage(m.chat, `*Bot aktif selama*\n${run}\n\n_©King Of Bear_`, 'conversation', {quoted: ftrol})
+					let jawab = `*Bot aktif selama*\n${run}\n\n_©King Of Bear_`.trim()
+conn.reply(m.chat, jawab, footer, {quoted: ftrol})
 }
 handler.help = ['runtime']
 handler.tags = ['info']
