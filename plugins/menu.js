@@ -214,9 +214,9 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
     throw e
   }
 }
-handler.help = ['menu']
+handler.help = ['allmenu']
 handler.tags = ['main']
-handler.command = /^(menu)$/i
+handler.command = /^(allmenu)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
