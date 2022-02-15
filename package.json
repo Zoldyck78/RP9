@@ -58,6 +58,7 @@
         "lowdb": "^2.1.0",
         "moment-timezone": "^0.5.34",
         "mongoose": "^6.0.14",
+        "emoji-api": "^2.0.0",
         "nekos.life": "^2.0.9",
         "node-fetch": "^2.6.6",
         "node-gtts": "^2.0.2",
