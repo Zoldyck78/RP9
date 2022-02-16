@@ -91,7 +91,7 @@ runtime = process.uptime()
 ┃✾ Tersisa *${limit} Limit*
 ┃✾ Role *${role}*
 ┃✾ Level *${level}* 
-┃✾ XP: *TOTAL ${exp} (${exp - min} / ${xp})*]
+┃✾ XP: *TOTAL ${exp} (${exp - min} / ${xp})*
 ┗━ꕥ
 ┏━ꕥ 
 ┃✾ Hari : *${week} ${weton}* 
