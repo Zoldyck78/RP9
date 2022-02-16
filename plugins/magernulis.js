@@ -1,6 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async (m, { command, conn, args, usedPrefix }) => {
   if (!args[0]) throw `contoh:\n${usedPrefix + command} Bear Ganteng`
+  m.reply('_Sedang membuat..._\n*Mohon tunggu sekitar 1 menit*')
   let res = await fetch(`https://apikey-bear3.herokuapp.com/api/maker/nulis?apikey=${bearkey}&text=${args[0]}`)
   if (!res.ok) throw eror
   let json = await res.json()
