@@ -1,12 +1,11 @@
 let fetch = require('node-fetch')
-let handler = async (m, { command, conn, text }) => {
-  let id = (command.match(/[1-6]$/) || [])[0] || ''
-  let url = global.API('xteam', '/magernulis' + id, {
-    text,
-    nama: conn.getName(m.sender),
-    kelas: ' '
-  }, 'APIKEY')
-  await conn.sendFile(m.chat, url, 'nulis.jpg', '', m, false, { thumbnail: await (await fetch(url)).buffer() })
+let handler = async (m, { command, conn, args, usedPrefix }) => {
+  if (!args[0]) throw `contoh:\n${usedPrefix + command} Bear Ganteng`
+  let res = await fetch(`https://apikey-bear3.herokuapp.com/api/maker/nulis?apikey=${bearkey}&text=${args[0]}`)
+  if (!res.ok) throw eror
+  let json = await res.json()
+  if (json.status != true) throw json
+conn.sendFile(m.chat, json.result, 'eror.jpg', `Ni kak udah jadi hehe:v\n${footer}`, m, 0, { thumbnail: await (await fetch(json.result)).buffer() })
 }
 handler.help = new Array(6).fill('magernulis').map((v, i) => v + (i + 1) + ' <teks>')
 handler.tags = ['nulis']
