@@ -131,7 +131,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
               {
              quickReplyButton: {
                displayText: 'Tampilkan Menu',
-               id: '.menu',
+               id: '.allmenu',
              }
 
            }]
