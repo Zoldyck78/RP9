@@ -60,9 +60,10 @@ ${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, command }) => {
-  let res = await fetch(`https://github.com/saipulanuar/Api-Github/raw/main/audio/Donasiku.mp3`)
-					json = await res.buffer()
   try {
+    
+    let res = await fetch(`https://github.com/saipulanuar/Api-Github/raw/main/audio/Donasiku.mp3`)
+    bzz = await res.buffer()
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
@@ -210,8 +211,8 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
          m.chat,
          template.message,
          { messageId: template.key.id }
-     )
-    conn.sendFile(m.chat, json, 'error.mp3', null, m, true)
+     )  
+	  await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
