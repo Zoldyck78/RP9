@@ -41,12 +41,13 @@ let tqto = `
        }
      }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
+    conn.sendFile(m.chat, json, 'error.mp3', null, m, true)
     return await conn.relayMessage(
          m.chat,
          template.message,
          { messageId: template.key.id }
      )
-    conn.sendFile(m.chat, json, 'error.mp3', null, m, true)
+    
 }
 
 handler.help = ['donasi']
