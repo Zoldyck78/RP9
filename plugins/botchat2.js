@@ -1,3 +1,4 @@
+let fetch = require("node-fetch")
 let moment = require('moment-timezone')
 let fs = require('fs')
 let handler = async (m, { conn, command }) => {
@@ -44,8 +45,11 @@ runtime = process.uptime()
                         }
                       }
 					//m.reply(teks)
+					let res = await fetch(`https://github.com/saipulanuar/Api-Github/raw/main/audio/MenuYuki.mp3`)
+					json = await res.buffer()
 					let jawab = `Hai Sayangku ${pushname2} ${ucapan()}\nSaya ${namabot} ada yang bisa saya bantu?`.trim()
 conn.reply(m.chat, jawab, footer, {quoted: ftrol})
+conn.sendFile(m.chat, json, 'error.mp3', null, m, true)
 }
 handler.customPrefix = /^(P|p|Hallo|halo|Halo|hallo|hi|helo|hai|hi|Hai|Helo|Hello|oy)$/i
 handler.command = new RegExp
