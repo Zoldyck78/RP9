@@ -2,7 +2,9 @@ const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessa
 let fs = require('fs')
 let fetch = require('node-fetch')
 let moment = require('moment-timezone')
-let handler = async (m) => {
+let handler = async (m, { conn }) => {
+    let res = await fetch(`https://github.com/saipulanuar/Api-Github/raw/main/audio/Donasiku.mp3`)
+	json = await res.buffer()
     let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
@@ -44,6 +46,7 @@ let tqto = `
          template.message,
          { messageId: template.key.id }
      )
+    conn.sendFile(m.chat, json, 'error.mp3', null, m, true)
 }
 
 handler.help = ['donasi']
