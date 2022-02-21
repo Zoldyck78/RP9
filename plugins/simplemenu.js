@@ -7,6 +7,8 @@ let img1 = fs.readFileSync('./src/img1.png')
 let img2 = fs.readFileSync('./src/img2.png')
 let user = global.DATABASE.data.users[m.sender]
 let levelling = require('../lib/levelling')
+let res = await fetch(`https://github.com/saipulanuar/Api-Github/raw/main/audio/Donasiku.mp3`)
+    bzz = await res.buffer()
 
 let { exp, limit, level, money, role } = global.db.data.users[m.sender]
 let { min, xp, max } = levelling.xpRange(level, global.multiplier)
@@ -141,6 +143,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
     //conn.reply(m.chat, text.trim(), m)
    //conn.reply(m.chat, jawab, footer, {quoted: ftrol}
 
+    conn.sendFile(m.chat, bzz, 'error.mp3', null, m, true)
     return await conn.relayMessage(
          m.chat,
          template.message,
