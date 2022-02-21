@@ -207,7 +207,7 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
        }
      }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
-    await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
+    conn.sendFile(m.chat, bzz, 'error.mp3', null, m, true)
     return await conn.relayMessage(
          m.chat,
          template.message,
