@@ -207,12 +207,13 @@ let handler = async (m, { conn, usedPrefix: _p, command }) => {
        }
      }), { userJid: m.sender, quoted: m });
     //conn.reply(m.chat, text.trim(), m)
+    await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
     return await conn.relayMessage(
          m.chat,
          template.message,
          { messageId: template.key.id }
      )  
-	  await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
+	  
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
