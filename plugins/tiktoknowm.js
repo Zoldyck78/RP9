@@ -30,10 +30,10 @@ ${txt}
     `
     await conn.sendFile(m.chat, url, 'tiktok.mp4', txt.trim(), m)
 }
-handler.help = ['tiktok'].map(v => v + ' <url>')
+handler.help = ['tiktok2'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 
-handler.command = /^(tik(tok)?(dl)?)$/i
+handler.command = /^(tiktok2)$/i
 handler.limit = true
 
 module.exports = handler
