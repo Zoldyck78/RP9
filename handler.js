@@ -172,7 +172,7 @@ module.exports = {
                 if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
                 if (chat) {
                     if (!('isBanned' in chat)) chat.isBanned = false
-                    if (!('welcome' in chat)) chat.welcome = false
+                    if (!('welcome' in chat)) chat.welcome = true
                     if (!('detect' in chat)) chat.detect = false
                     if (!('sWelcome' in chat)) chat.sWelcome = ''
                     if (!('sBye' in chat)) chat.sBye = ''
@@ -188,7 +188,7 @@ module.exports = {
                     if (!('antiToxic' in chat)) chat.antiToxic = false
                 } else global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: false,
+                    welcome: true,
                     detect: false,
                     sWelcome: '',
                     sBye: '',
@@ -204,7 +204,7 @@ module.exports = {
                     antiToxic: true,
                 }
                 
-        let settings = global.db.data.settings
+        let settings = global.db.data.settings[this.user.jid]
         if (typeof settings !== 'object') global.db.data.settings = {}
         if (settings) {
           if (!'anon' in settings) settings.anon = true
@@ -482,13 +482,13 @@ module.exports = {
         if (opts['self']) return
         // if (id in conn.chats) return // First login will spam
         if (global.isInit) return
-        let chat = global.db.data.chats[id] || {}
+        let chat = global.db.data.chats[jid] || {}
         let text = ''
         switch (action) {
             case 'add':
             case 'remove':
                 if (chat.welcome) {
-                    let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
+                    let groupMetadata = await this.groupMetadata(id) || (conn.chats[jid] || {}).metadata
                     for (let user of participants) {
                         let pp = './src/avatar_contact.png'
                         try {
@@ -522,9 +522,9 @@ module.exports = {
     },
     async delete({ remoteJid, fromMe, id, participant }) {
         if (fromMe) return
-        let chats = Object.entries(conn.chats).find(([user, data]) => data.messages && data.messages[id])
+        let chats = Object.entries(conn.chats).find(([user, data]) => data.messages && data.messages[jid])
         if (!chats) return
-        let msg = JSON.parse(chats[1].messages[id])
+        let msg = JSON.parse(chats[1].messages[jid])
         let chat = global.db.data.chats[msg.key.remoteJid] || {}
         if (chat.delete) return
         await this.reply(msg.key.remoteJid, `
