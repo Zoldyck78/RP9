@@ -31,7 +31,7 @@ var seconds = Math.floor(seconds % 60);
 return `${pad(hours)}Jam ${pad(minutes)}Menit ${pad(seconds)}Detik`
 }
 runtime = process.uptime()
-          teks = `𝑲𝒊𝒏𝒈 𝑶𝒇 𝑩𝒆𝒂𝒓 𝑶𝒇𝒇𝒊𝒄𝒊𝒂𝒍`// \n\n${kyun(runtime)}`
+          teks = `αʅԃσ Ⴆҽʅυɱ ʋαƙʂιɳ`// \n\n${kyun(runtime)}`
           run = `${kyun(runtime)}`
           var itsme = `0@s.whatsapp.net`
           var split = `teks`
@@ -44,9 +44,9 @@ runtime = process.uptime()
                             itemCount : 999,
                             status: 1,
                             surface : 1,
-                            message: `${teks}\n${run}`, //Kasih namalu
+                            message: `αʅԃσ Ⴆҽʅυɱ ʋαƙʂιɳ`, //Kasih namalu
                             orderTitle: `${teks}\n${run}`,
-                            thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer(), //Gambarnye
+                            thumbnail: await (await fetch(`https://pin.it/7xb00eG.jpg`)).buffer(), //Gambarnye
                             sellerJid: '0@s.whatsapp.net' 
                           }
                         }
@@ -104,8 +104,6 @@ runtime = process.uptime()
 ┏━ꕥ
 ┃✾ Uptime: *${uptime} (${muptime})*
 ┃✾ Database: ${rtotalreg} dari ${totalreg}
-┃✾ Youtube:
-┃✾ https://youtu.be/Sgb5BVOW66Y
 ┗━━━━━━ꕥ
 ━━━ꕥ〔 _*Quotes Harian*_ 〕ꕥ━⬣
 “${pickRandom(global.quotes)}”`.trim()
@@ -114,19 +112,19 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
          hydratedTemplate: {
            hydratedContentText: jawab,
            locationMessage: { 
-           jpegThumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer() }, 
+           jpegThumbnail: await (await fetch(`https://pin.it/7xb00eG.jpg`)).buffer() }, 
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: 'Link Script',
+               displayText: 'Link',
                url: 'https://xnxx.com',
              }
 
            },
                {
              urlButton: {
-               displayText: 'Joint Group King Of Bear',
-              url : 'https://chat.whatsapp.com/HAZ6yFgCafUAeDbNH33IrL',
+               displayText: 'Wa Owner',
+              url : 'wa.me/6281368962120',
              }
 
            },
