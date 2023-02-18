@@ -33,4 +33,5 @@ handler.help = ['absen']
 handler.tags = ['absen']
 handler.command = /^(absen|hadir)$/i
 handler.group = true
+handler.admin = false
 module.exports = handler
